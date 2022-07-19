@@ -16,7 +16,7 @@ Have fun creating your portfolio on this template!!! -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Title: add your Portfolio websites's title here -->
-    <title>[Your name here] | Developer</title>
+    <title>Alejandro Matamoros</title>
 
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
@@ -25,7 +25,7 @@ Have fun creating your portfolio on this template!!! -->
     <meta name="description" content="[Your name here] | Developer" />
 
     <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
-    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+    <!-- <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" /> -->
 
     <!-- Add your primary-theme color for the value of content -->
     <meta name="theme-color" content="#36d1dc" />
@@ -99,10 +99,10 @@ Have fun creating your portfolio on this template!!! -->
         <h1 class="hero-title">
           Hi, my name is <span class="text-color-main name">Alejandro Matamoros</span>
           <br />
-          I'm the Unknown Developer.
+          I'm a Software Engineer.
         </h1>
         <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+          <a class="cta-btn cta-btn--hero" href="#projects">My Projects</a>
         </p>
       </section>
       <a href="#about" class="scroll-down-link" aria-label="scroll-down">
@@ -119,7 +119,7 @@ Have fun creating your portfolio on this template!!! -->
           <div class="about-wrapper__image">
             <img
               class="img-fluid"
-              src="./assets/profile.png"
+              src="./assets/profpic.jpg"
               alt="Profile Image"
             />
           </div>
@@ -144,7 +144,7 @@ Have fun creating your portfolio on this template!!! -->
               so that I can reach all my goals and change the world one day.
             </p>
             <span class="about-wrapper__cta">
-              <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
+              <a href="https://github.com/AlexManuel1" target="_blank" class="cta-btn cta-btn--resume">View My Github</a>
             </span>
           </div>
         </div>
@@ -157,33 +157,75 @@ Have fun creating your portfolio on this template!!! -->
       <div class="container">
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Projects</h2>
+          
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">
+                Fabflix
+              </h3>
+              <p class="project-wrapper__text-info">
+                Full Stack Netflix clone. Features include
+                Login/Registration, full text search, 
+                filtering, mock purchasing system, shopping cart,
+                session management, and admin dashboard. 
+                Built using JQuery, Apache Tomcat, and MySQL. 
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://www.youtube.com/watch?v=ZR5DDI9QnxA&t=312s"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                >Demo</a>
+                <a href="https://github.com/AlexManuel1/Fabflix" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://github.com/AlexManuel1/Fabflix" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Fabflix.PNG"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
 
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Silk</h3>
               <p class="project-wrapper__text-info">
-                Job search application that utilized the github jobs api (deprecated) to return job listings based on inputted keywords
+                Job search application that utilized the github 
+                jobs api (deprecated) to return job listings based 
+                on inputted keywords. Built using React js. 
               </p>
               <div class="project-wrapper__text-btns">
-                <!-- <a
-                  href="#"
+                <a
+                  href="https://drive.google.com/file/d/1SCi4-Rwa0KpvKqaCfqcTmrTO35ViU90v/view"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                > -->
-                <a href="https://drive.google.com/file/d/1SCi4-Rwa0KpvKqaCfqcTmrTO35ViU90v/view" target="_blank" class="cta-btn text-color-main"
+                  >Demo</a
+                >
+                <a href="https://github.com/AlexManuel1/JobSearchApplication" target="_blank" class="cta-btn text-color-main"
                   >Source Code</a
                 >
               </div>
             </div>
 
             <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/AlexManuel1/JobSearchApplication" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/project.png"
+                    src="./assets/silk.png"
                     class="img-fluid"
                     alt="Project Image"
                   />
@@ -196,70 +238,33 @@ Have fun creating your portfolio on this template!!! -->
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <h3 class="project-wrapper__text-title">
+                WeatherGoGo
+              </h3>
               <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
+                Weather application that makes use of the 
+                OpenWeather API and retrieves weather data 
+                based on inputted location. Built using React js.
               </p>
               <div class="project-wrapper__text-btns">
                 <a
-                  href="#"
+                  href="https://alexmanuel1.github.io/WeatherGoGo/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="cta-btn cta-btn--hero cta-btn--projects"
                   >See Live</a
                 >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
+                <a href="https://github.com/AlexManuel1/WeatherGoGo" target="_blank" class="cta-btn text-color-main"
                   >Source Code</a
                 >
               </div>
             </div>
 
             <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://alexmanuel1.github.io/WeatherGoGo/" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/project.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
-              <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/project.png"
+                    src="./assets/weathergogo.png"
                     class="img-fluid"
                     alt="Project Image"
                   />
@@ -278,8 +283,8 @@ Have fun creating your portfolio on this template!!! -->
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a href="#" class="cta-btn cta-btn--resume">Call to Action</a>
+          <p class="contact-wrapper__text">Lets get in touch!</p>
+          <a href="mailto:AlexMatamoros10@gmail.com" class="cta-btn cta-btn--resume">Email</a>
         </div>
       </div>
     </section>
@@ -292,7 +297,7 @@ Have fun creating your portfolio on this template!!! -->
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a
+          <!-- <a
             href="#!"
             target="_blank"
             rel="noopener noreferrer"
@@ -315,9 +320,9 @@ Have fun creating your portfolio on this template!!! -->
             aria-label="codepen"
           >
             <i class="fa fa-codepen"></i>
-          </a>
+          </a> -->
           <a
-            href="#!"
+            href="https://www.linkedin.com/in/alejandrommatamoros/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="linkedin"
@@ -325,7 +330,7 @@ Have fun creating your portfolio on this template!!! -->
             <i class="fa fa-linkedin"></i>
           </a>
           <a
-            href="#!"
+            href="https://github.com/AlexManuel1"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="github"
